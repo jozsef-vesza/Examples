@@ -19,8 +19,7 @@
 
 @implementation JVEMainViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"personCell"];
     self.dataSource = [[JVETableViewDataSource alloc] initWithTableView:self.tableView withItems:[self generatePeople] withCellConfigurator:[[JVECellConfigurator alloc] init]];
